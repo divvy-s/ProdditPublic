@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 dark:bg-dark-bg text-gray-900 dark:text-dark-text transition-colors duration-200;
+  }
+  
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-proddit-orange hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-proddit-blue hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-proddit-orange text-proddit-orange hover:bg-proddit-orange hover:text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-dark-card rounded-lg shadow-md border border-gray-200 dark:border-dark-border p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-proddit-orange focus:border-transparent;
+  }
+  
+  .post-card {
+    @apply bg-white dark:bg-dark-card rounded-lg shadow-sm border border-gray-200 dark:border-dark-border hover:shadow-md transition-shadow duration-200 cursor-pointer;
+  }
+  
+  .post-header {
+    @apply flex items-center space-x-2 p-3 border-b border-gray-100 dark:border-dark-border;
+  }
+  
+  .post-content {
+    @apply p-3;
+  }
+  
+  .post-footer {
+    @apply flex items-center justify-between p-3 border-t border-gray-100 dark:border-dark-border bg-gray-50 dark:bg-dark-bg;
+  }
+  
+  .vote-button {
+    @apply flex items-center space-x-1 text-gray-500 hover:text-proddit-orange transition-colors duration-200;
+  }
+  
+  .vote-button.upvoted {
+    @apply text-proddit-orange;
+  }
+  
+  .vote-button.downvoted {
+    @apply text-proddit-blue;
+  }
+  
+  .navbar {
+    @apply bg-white dark:bg-dark-bg shadow-sm border-b border-gray-200 dark:border-dark-border sticky top-0 z-50;
+  }
+  
+  .navbar-brand {
+    @apply text-2xl font-bold text-proddit-orange;
+  }
+  
+  .nav-link {
+    @apply text-gray-700 dark:text-dark-text hover:text-proddit-orange transition-colors duration-200;
+  }
+  
+  .community-card {
+    @apply bg-white dark:bg-dark-card rounded-lg shadow-sm border border-gray-200 dark:border-dark-border p-4 hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .community-header {
+    @apply flex items-center space-x-3 mb-3;
+  }
+  
+  .community-avatar {
+    @apply w-12 h-12 bg-proddit-orange rounded-full flex items-center justify-center text-white font-bold text-lg;
+  }
+  
+  .form-container {
+    @apply max-w-md mx-auto bg-white dark:bg-dark-card rounded-lg shadow-md p-6;
+  }
+  
+  .form-title {
+    @apply text-2xl font-bold text-center mb-6 text-gray-800 dark:text-dark-text;
+  }
+  
+  .form-group {
+    @apply mb-4;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 dark:text-dark-text mb-2;
+  }
+  
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 dark:border-dark-border rounded-lg focus:outline-none focus:ring-2 focus:ring-proddit-orange focus:border-transparent bg-white dark:bg-dark-card text-gray-900 dark:text-dark-text;
+  }
+  
+  .form-button {
+    @apply w-full bg-proddit-orange hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .main-container {
+    @apply max-w-4xl mx-auto px-4 py-6;
+  }
+  
+  .sidebar {
+    @apply bg-white dark:bg-dark-card rounded-lg shadow-sm border border-gray-200 dark:border-dark-border p-4;
+  }
+  
+  .sidebar-title {
+    @apply text-lg font-semibold text-gray-800 dark:text-dark-text mb-3;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center space-x-2 py-2 text-gray-600 dark:text-dark-text-secondary hover:text-proddit-orange transition-colors duration-200 cursor-pointer;
+  }
+}

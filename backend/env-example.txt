@@ -1,0 +1,4 @@
+DB_URI=mongodb://localhost:27017/proddit
+JWT_SECRET=sgdfsafs
+PORT=5001
+CORS_ORIGINS=http://localhost:5173
