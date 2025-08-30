@@ -49,10 +49,6 @@ app.use('/api/studyrooms', studyRoomRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/habits', habitRoutes);
 
-app.get('/health', (req, res) => {
-  res.json({ message: 'Proddit API is running!', timestamp: new Date().toISOString() });
-});
-
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ message: 'Something went wrong!' });
