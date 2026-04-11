@@ -18,7 +18,6 @@ To ensure a smooth collaboration, please follow these guidelines:
 
 ### Feature Additions & Enhancements
 - We welcome new features and enhancement ideas!
-- Check out the [issues.md](issues.md) for a list of suggested tasks we've already identified.
 - If you have a new idea, feel free to open an issue to discuss it before starting work.
 
 ### Submitting Pull Requests
